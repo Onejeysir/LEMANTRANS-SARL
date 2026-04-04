@@ -317,6 +317,27 @@
       .faq-item .flex { padding:1rem!important; }
       .faq-icon { width:32px!important; height:32px!important; flex-shrink:0; }
     }
+    
+    /* Wood partnership section */
+    .wood-card { 
+      background: linear-gradient(135deg, rgba(139, 69, 19, 0.03), rgba(101, 67, 33, 0.02));
+      border: 1px solid rgba(139, 69, 19, 0.15);
+      transition: all 0.35s ease;
+    }
+    .wood-card:hover {
+      transform: translateY(-7px);
+      border-color: rgba(139, 69, 19, 0.3)!important;
+      box-shadow: 0 20px 50px rgba(139, 69, 19, 0.12)!important;
+    }
+    .wood-icon {
+      background: linear-gradient(135deg, rgba(139, 69, 19, 0.12), rgba(101, 67, 33, 0.08));
+      border: 1px solid rgba(139, 69, 19, 0.2);
+    }
+    .wood-badge {
+      background: rgba(139, 69, 19, 0.08);
+      border: 1px solid rgba(139, 69, 19, 0.2);
+      color: #8B4513;
+    }
   </style>
 </head>
 <body>
@@ -353,6 +374,7 @@
     <!-- Desktop nav -->
     <nav class="hidden lg:flex gap-0.5">
       <a href="#services"  class="nav-link">Services</a>
+      <a href="#bois"      class="nav-link">Négoce Bois</a>
       <a href="#pourquoi"  class="nav-link">Pourquoi nous</a>
       <a href="#process"   class="nav-link">Processus</a>
       <a href="#faq"       class="nav-link">FAQ</a>
@@ -383,6 +405,9 @@
     <div style="padding:.75rem 1.25rem 1.25rem;">
       <a href="#services"  onclick="closeMenu()" class="flex items-center py-3.5 syne font-bold uppercase tracking-wider no-underline" style="font-size:.92rem;color:#4A3070;border-bottom:1px solid rgba(107,62,200,.07);">
         <span style="margin-right:.75rem;font-size:1.1rem;">🚛</span>Services
+      </a>
+      <a href="#bois"      onclick="closeMenu()" class="flex items-center py-3.5 syne font-bold uppercase tracking-wider no-underline" style="font-size:.92rem;color:#4A3070;border-bottom:1px solid rgba(107,62,200,.07);">
+        <span style="margin-right:.75rem;font-size:1.1rem;">🌳</span>Négoce Bois
       </a>
       <a href="#pourquoi"  onclick="closeMenu()" class="flex items-center py-3.5 syne font-bold uppercase tracking-wider no-underline" style="font-size:.92rem;color:#4A3070;border-bottom:1px solid rgba(107,62,200,.07);">
         <span style="margin-right:.75rem;font-size:1.1rem;">💼</span>Pourquoi nous
@@ -422,7 +447,9 @@
     <span style="color:rgba(255,255,255,.4);">·</span>
     <span class="syne font-bold uppercase whitespace-nowrap" style="font-size:clamp(.58rem,.75vw,.72rem);letter-spacing:.12em;color:rgba(255,255,255,.9);">🌍 IMPORT — EXPORT</span>
     <span style="color:rgba(255,255,255,.4);">·</span>
-    <span class="syne font-bold uppercase whitespace-nowrap" style="font-size:clamp(.58rem,.75vw,.72rem);letter-spacing:.12em;color:rgba(255,255,255,.9);">📋 COMMISSAIRE AGRÉÉ EN DOUANE</span>
+    <span class="syne font-bold uppercase whitespace-nowrap" style="font-size:clamp(.58rem,.75vw,.72rem);letter-spacing:.12em;color:rgba(255,255,255,.9);">🌳 NÉGOCE BOIS</span>
+    <span style="color:rgba(255,255,255,.4);">·</span>
+    <span class="syne font-bold uppercase whitespace-nowrap" style="font-size:clamp(.58rem,.75vw,.72rem);letter-spacing:.12em;color:rgba(255,255,255,.9);">📋 COMMISSIONAIRE AGRÉÉ EN DOUANE</span>
     <span style="color:rgba(255,255,255,.4);">·</span>
     <span class="syne font-bold uppercase whitespace-nowrap" style="font-size:clamp(.58rem,.75vw,.72rem);letter-spacing:.12em;color:rgba(255,255,255,.9);">🏗️ MATÉRIAUX DE CONSTRUCTION</span>
     <span style="color:rgba(255,255,255,.4);">·</span>
@@ -435,7 +462,9 @@
     <span style="color:rgba(255,255,255,.4);">·</span>
     <span class="syne font-bold uppercase whitespace-nowrap" style="font-size:clamp(.58rem,.75vw,.72rem);letter-spacing:.12em;color:rgba(255,255,255,.9);">🌍 IMPORT — EXPORT</span>
     <span style="color:rgba(255,255,255,.4);">·</span>
-    <span class="syne font-bold uppercase whitespace-nowrap" style="font-size:clamp(.58rem,.75vw,.72rem);letter-spacing:.12em;color:rgba(255,255,255,.9);">📋 COMMISSAIRE AGRÉÉ EN DOUANE</span>
+    <span class="syne font-bold uppercase whitespace-nowrap" style="font-size:clamp(.58rem,.75vw,.72rem);letter-spacing:.12em;color:rgba(255,255,255,.9);">🌳 NÉGOCE BOIS</span>
+    <span style="color:rgba(255,255,255,.4);">·</span>
+    <span class="syne font-bold uppercase whitespace-nowrap" style="font-size:clamp(.58rem,.75vw,.72rem);letter-spacing:.12em;color:rgba(255,255,255,.9);">📋 COMMISSIONAIRE AGRÉÉ EN DOUANE</span>
     <span style="color:rgba(255,255,255,.4);">·</span>
     <span class="syne font-bold uppercase whitespace-nowrap" style="font-size:clamp(.58rem,.75vw,.72rem);letter-spacing:.12em;color:rgba(255,255,255,.9);">🏗️ MATÉRIAUX DE CONSTRUCTION</span>
     <span style="color:rgba(255,255,255,.4);">·</span>
@@ -474,7 +503,7 @@
         <p class="hero-desc mb-8" style="font-size:clamp(.88rem,1.4vw,1.05rem);color:#6B5B8D;line-height:1.8;max-width:500px;">
           LEMATRANS CAMEROUN SARL, spécialiste du <strong style="color:#6B3EC8;">Transport Routier</strong>,
           de la <strong style="color:#6B3EC8;">Logistique Spécialisée</strong> et de
-          l'<strong style="color:#6B3EC8;">Import-Export</strong> depuis 2013. Commissaire agréé en douane.
+          l'<strong style="color:#6B3EC8;">Import-Export</strong> depuis 2013. Commissionnaire agréé en douane.
         </p>
         <div class="hero-btns flex flex-wrap gap-3 mb-8">
           <a href="#services" class="btn-v" style="flex:1 1 auto;justify-content:center;min-width:140px;max-width:220px;">
@@ -519,7 +548,7 @@
               style="background:rgba(255,255,255,.95);border:1px solid rgba(107,62,200,.2);backdrop-filter:blur(12px);padding:9px 13px;box-shadow:0 4px 16px rgba(107,62,200,.12);">
               <span style="font-size:1.25rem;">📋</span>
               <div>
-                <div class="syne font-bold" style="font-size:.72rem;color:#1A0A3C;">Commissaire Agréé</div>
+                <div class="syne font-bold" style="font-size:.72rem;color:#1A0A3C;">Commissionnaire Agréé</div>
                 <div style="font-size:.58rem;color:#9B85C0;">en Douane</div>
               </div>
             </div>
@@ -645,6 +674,126 @@
 
 
 <!-- ══════════════════════════════════════
+     NOUVELLE SECTION: NÉGOCE BOIS
+══════════════════════════════════════ -->
+<section id="bois" class="bg-light-section px-4 sm:px-6 lg:px-8 section-pad">
+  <div class="max-w-[1320px] mx-auto">
+    <div class="text-center mb-10 reveal">
+      <div class="flex items-center justify-center gap-2 mb-2">
+        <div style="height:1px;width:24px;background:linear-gradient(90deg,transparent,#8B4513);"></div>
+        <span class="syne font-extrabold uppercase section-label" style="color:#8B4513;letter-spacing:.18em;">Partenariat Spécialisé</span>
+        <div style="height:1px;width:24px;background:linear-gradient(90deg,#8B4513,transparent);"></div>
+      </div>
+      <h2 class="playfair section-title" style="font-weight:800;line-height:1.08;margin-bottom:.75rem;color:#1A0A3C;">Partenariat dans le <span style="color:#8B4513;">Négoce Bois</span></h2>
+      <p class="section-desc" style="color:#6B5B8D;max-width:620px;margin:0 auto;line-height:1.8;">
+        Grâce à son réseau de partenaires spécialisés, LEMATRANS facilite l'approvisionnement et la commercialisation de bois de qualité destinés à la construction, à l'industrie et à l'exportation.
+      </p>
+    </div>
+
+    <!-- Main Wood Card -->
+    <div class="wood-card light-card rounded-[24px] p-6 sm:p-8 mb-10 reveal" style="animation-delay:0s;">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <div class="flex items-center justify-center rounded-[14px] wood-icon" style="width:52px;height:52px;font-size:1.6rem;">🌳</div>
+            <div>
+              <div class="syne font-bold uppercase wood-badge rounded-full px-3 py-1" style="font-size:.58rem;letter-spacing:.12em;">Expertise Bois</div>
+              <div class="playfair font-bold" style="font-size:1.3rem;color:#1A0A3C;margin-top:4px;">Bois de Qualité Certifiée</div>
+            </div>
+          </div>
+          <p class="mb-6" style="font-size:.92rem;color:#6B5B8D;line-height:1.8;">
+            Nous assurons la gestion logistique complète pour garantir des opérations fiables, sécurisées et traçables, de la forêt au client final.
+          </p>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-7">
+            <div class="flex items-start gap-3">
+              <span class="syne font-bold" style="color:#8B4513;font-size:1.1rem;">✦</span>
+              <div>
+                <div class="syne font-bold" style="font-size:.82rem;color:#1A0A3C;">Partenaires Spécialisés</div>
+                <div style="font-size:.74rem;color:#6B5B8D;">Mise en relation avec des acteurs clés du secteur bois</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="syne font-bold" style="color:#8B4513;font-size:1.1rem;">✦</span>
+              <div>
+                <div class="syne font-bold" style="font-size:.82rem;color:#1A0A3C;">Logistique Coordinée</div>
+                <div style="font-size:.74rem;color:#6B5B8D;">Coordination complète des opérations d'approvisionnement</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="syne font-bold" style="color:#8B4513;font-size:1.1rem;">✦</span>
+              <div>
+                <div class="syne font-bold" style="font-size:.82rem;color:#1A0A3C;">Transport Sécurisé</div>
+                <div style="font-size:.74rem;color:#6B5B8D;">Véhicules adaptés et protection optimale du bois</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="syne font-bold" style="color:#8B4513;font-size:1.1rem;">✦</span>
+              <div>
+                <div class="syne font-bold" style="font-size:.82rem;color:#1A0A3C;">Traçabilité Totale</div>
+                <div style="font-size:.74rem;color:#6B5B8D;">Suivi en temps réel de chaque livraison</div>
+              </div>
+            </div>
+          </div>
+          
+          <a href="https://wa.me/237696797882?text=Bonjour%20LEMATRANS%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20votre%20service%20de%20N%C3%A9goce%20Bois." target="_blank" rel="noreferrer" 
+             class="btn-v" style="font-size:.82rem;padding:12px 24px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.534 5.853L0 24l6.335-1.521A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.945 9.945 0 01-5.33-1.44l-.38-.225-3.962.951.972-3.867-.248-.389A9.945 9.945 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Contactez nous pour le negoce Bois
+          </a>
+        </div>
+        
+        <div class="relative">
+          <div class="rounded-[20px] overflow-hidden border border-rgba(139,69,19,.15) shadow-lg" style="box-shadow:0 12px 40px rgba(139,69,19,.12);">
+            <img src="https://images.unsplash.com/photo-1542600176-397e6b62d5e5?w=600&h=400&fit=crop" 
+                 alt="Négoce bois qualité" 
+                 class="w-full h-64 sm:h-80 object-cover"
+                 style="min-height:240px;"
+                 onerror="this.src='https://placehold.co/600x400/F5E9D9/8B4513?text=BOIS+QUALITÉ'"/>
+            <div class="absolute inset-0" style="background:linear-gradient(135deg,rgba(139,69,19,.08),transparent 60%);"></div>
+          </div>
+          <div class="absolute -bottom-4 -right-4 wood-card light-card rounded-xl p-3 flex items-center gap-2 shadow-md" style="border-color:rgba(139,69,19,.2);">
+            <span style="font-size:1.3rem;">🌲</span>
+            <div>
+              <div class="syne font-bold" style="font-size:.7rem;color:#1A0A3C;">Bois Certifiés</div>
+              <div style="font-size:.62rem;color:#6B5B8D;">Construction & Export</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Wood Applications Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 reveal">
+      <div class="light-card rounded-2xl p-5 hover-lift reveal" style="animation-delay:.1s;">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="flex items-center justify-center rounded-xl wood-icon" style="width:44px;height:44px;font-size:1.3rem;">🏗️</div>
+          <h4 class="syne font-bold" style="font-size:.95rem;color:#1A0A3C;">Construction</h4>
+        </div>
+        <p style="font-size:.82rem;color:#6B5B8D;line-height:1.7;">Bois de charpente, panneaux, parquets et matériaux pour le BTP camerounais.</p>
+      </div>
+      
+      <div class="light-card rounded-2xl p-5 hover-lift reveal" style="animation-delay:.2s;">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="flex items-center justify-center rounded-xl wood-icon" style="width:44px;height:44px;font-size:1.3rem;">🏭</div>
+          <h4 class="syne font-bold" style="font-size:.95rem;color:#1A0A3C;">Industrie</h4>
+        </div>
+        <p style="font-size:.82rem;color:#6B5B8D;line-height:1.7;">Bois industriels pour la transformation, l'ameublement et la menuiserie.</p>
+      </div>
+      
+      <div class="light-card rounded-2xl p-5 hover-lift reveal" style="animation-delay:.3s;">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="flex items-center justify-center rounded-xl wood-icon" style="width:44px;height:44px;font-size:1.3rem;">🌍</div>
+          <h4 class="syne font-bold" style="font-size:.95rem;color:#1A0A3C;">Exportation</h4>
+        </div>
+        <p style="font-size:.82rem;color:#6B5B8D;line-height:1.7;">Commercialisation internationale avec conformité aux normes d'export.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
      POURQUOI NOUS
 ══════════════════════════════════════ -->
 <section id="pourquoi" class="bg-light-section px-4 sm:px-6 lg:px-8 section-pad">
@@ -661,8 +810,8 @@
     <div class="why-grid grid gap-4" style="grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));">
       <div class="why-card light-card hover-lift rounded-[18px] p-6 reveal" style="animation-delay:0s;">
         <div class="why-icon flex items-center justify-center rounded-2xl mb-3.5" style="width:50px;height:50px;background:linear-gradient(135deg,rgba(155,110,245,.12),rgba(107,62,200,.05));border:1px solid rgba(107,62,200,.15);font-size:1.3rem;">📋</div>
-        <h4 class="why-title syne font-extrabold mb-1.5" style="font-size:.97rem;color:#1A0A3C;">Commissaire Agréé</h4>
-        <p style="font-size:.81rem;color:#6B5B8D;line-height:1.7;">Commissaire officiellement agréé en douane par les autorités camerounaises. Légalité totale garantie sur chaque opération.</p>
+        <h4 class="why-title syne font-extrabold mb-1.5" style="font-size:.97rem;color:#1A0A3C;">Commissionnaire Agréé</h4>
+        <p style="font-size:.81rem;color:#6B5B8D;line-height:1.7;">Commissionnaire officiellement agréé en douane par les autorités camerounaises. Légalité totale garantie sur chaque opération.</p>
       </div>
       <div class="why-card light-card hover-lift rounded-[18px] p-6 reveal" style="animation-delay:.06s;">
         <div class="why-icon flex items-center justify-center rounded-2xl mb-3.5" style="width:50px;height:50px;background:linear-gradient(135deg,rgba(155,110,245,.12),rgba(107,62,200,.05));border:1px solid rgba(107,62,200,.15);font-size:1.3rem;">📅</div>
@@ -796,7 +945,7 @@
     </div>
     <div class="stat-box light-card rounded-2xl text-center reveal" style="padding:clamp(1.1rem,3vw,1.6rem) clamp(.75rem,2vw,1rem);animation-delay:.28s;">
       <div class="playfair shimmer-glow" style="font-size:clamp(1.4rem,3vw,2.4rem);font-weight:800;line-height:1;">Agréé</div>
-      <div class="syne" style="font-size:clamp(.52rem,.7vw,.62rem);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#9B85C0;margin-top:4px;">Commissaire Douane</div>
+      <div class="syne" style="font-size:clamp(.52rem,.7vw,.62rem);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#9B85C0;margin-top:4px;">Commissionnaire Douane</div>
     </div>
     <div class="stat-box light-card rounded-2xl text-center reveal" style="padding:clamp(1.1rem,3vw,1.6rem) clamp(.75rem,2vw,1rem);animation-delay:.35s;">
       <div class="playfair shimmer-glow" style="font-size:clamp(1.4rem,3vw,2.4rem);font-weight:800;line-height:1;">7j/7</div>
@@ -827,7 +976,7 @@
           <span class="faq-q syne font-bold flex-1" style="font-size:clamp(.82rem,1.1vw,.92rem);color:#1A0A3C;">Qu'est-ce qu'un commissaire agréé en douane ?</span>
           <div class="faq-icon flex items-center justify-center rounded-lg flex-shrink-0" style="width:28px;height:28px;background:rgba(107,62,200,.08);border:1px solid rgba(107,62,200,.18);color:#6B3EC8;font-size:1.1rem;">+</div>
         </div>
-        <div class="faq-body">Un commissaire agréé en douane est un professionnel habilité par les autorités douanières à réaliser toutes les formalités de dédouanement au nom de ses clients. LEMATRANS CAMEROUN SARL détient cet agrément officiel depuis 2013, garantissant la légalité totale de chaque opération d'import-export.</div>
+        <div class="faq-body">Un commissionnaire agréé en douane est un professionnel habilité par les autorités douanières à réaliser toutes les formalités de dédouanement au nom de ses clients. LEMATRANS CAMEROUN SARL détient cet agrément officiel depuis 2013, garantissant la légalité totale de chaque opération d'import-export.</div>
       </div>
 
       <div class="faq-item rounded-2xl overflow-hidden cursor-pointer transition-all duration-300" onclick="toggleFaq(this)">
@@ -992,7 +1141,7 @@
           </div>
         </a>
         <p class="mb-4" style="font-size:.79rem;color:#6B5B8D;line-height:1.7;max-width:230px;">
-          Commissaire Agréé en Douane. Transport Routier, Logistique Spécialisée et Import-Export au Cameroun depuis 2013.
+          Commissionnaire Agréé en Douane. Transport Routier, Logistique Spécialisée et Import-Export au Cameroun depuis 2013.
         </p>
         <a href="https://wa.me/237696797882?text=Bonjour%20LEMATRANS%2C%20je%20souhaite%20un%20renseignement." target="_blank" rel="noreferrer"
            class="btn-wa" style="font-size:.74rem;padding:8px 14px;">
@@ -1006,6 +1155,7 @@
         <ul class="list-none flex flex-col gap-1.5">
           <li><a href="#hero"      style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">Accueil</a></li>
           <li><a href="#services"  style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">Services</a></li>
+          <li><a href="#bois"      style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">Négoce Bois</a></li>
           <li><a href="#pourquoi"  style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">Pourquoi nous</a></li>
           <li><a href="#process"   style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">Processus</a></li>
           <li><a href="#faq"       style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">FAQ</a></li>
@@ -1019,6 +1169,7 @@
           <li><a href="#services" style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">🚛 Transport Routier</a></li>
           <li><a href="#services" style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">⚙️ Logistique Spécialisée</a></li>
           <li><a href="#services" style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">🌍 Import — Export</a></li>
+          <li><a href="#bois"     style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">🌳 Négoce Bois</a></li>
           <li><a href="#services" style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">📦 Entreposage</a></li>
           <li><a href="#services" style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">✈️ Fret Aérien</a></li>
         </ul>
@@ -1040,7 +1191,7 @@
 
     <div class="flex flex-wrap justify-between items-center gap-2 pt-4" style="border-top:1px solid rgba(107,62,200,.1);">
       <div style="font-size:.72rem;color:#9B85C0;">© 2025 <span style="color:#6B3EC8;font-weight:700;">LEMATRANS CAMEROUN SARL</span> · Tous droits réservés</div>
-      <div style="font-size:.72rem;color:#9B85C0;">Commissaire Agréé en Douane 📋 · Douala 🇨🇲 · Depuis 2013</div>
+      <div style="font-size:.72rem;color:#9B85C0;">Commissionnaire Agréé en Douane 📋 · Douala 🇨🇲 · Depuis 2013</div>
     </div>
   </div>
 </footer>
@@ -1125,6 +1276,22 @@ function toggleFaq(el) {
     el.querySelector('.faq-body').classList.add('open');
   }
 }
+
+/* ── Smooth scroll for anchor links ── */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (href !== '#' && href.startsWith('#')) {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Close mobile menu if open
+        if (menuOpen) closeMenu();
+      }
+    }
+  });
+});
 </script>
 </body>
 </html>
