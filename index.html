@@ -150,175 +150,176 @@
     .ring-deco { display:none; }
     @media(min-width:1024px) { .ring-deco { display:block; } }
 
-    /* ══════════════════════════════════════════════
-       RESPONSIVE — MOBILE FIRST
-    ══════════════════════════════════════════════ */
-
-    /* Buttons */
-    @media(max-width:639px) {
-      .btn-v, .btn-wa, .btn-ghost { padding:11px 18px; font-size:.78rem; }
-    }
-
-    /* Hero */
-    @media(max-width:639px) {
-      #hero { padding-top:3rem; padding-bottom:3rem; }
-      .hero-btns { flex-direction:column; }
-      .hero-btns a, .hero-btns button { width:100%; justify-content:center; }
-      .mini-stats-grid { grid-template-columns:repeat(3,1fr)!important; gap:8px!important; }
-      .mini-stat-val { font-size:clamp(1.2rem,5vw,1.5rem)!important; }
-      .mini-stat-label { font-size:.52rem!important; }
-    }
-    @media(min-width:640px) and (max-width:1023px) {
-      #hero { padding-top:4rem; padding-bottom:4rem; }
-    }
-
-    /* Services grid */
-    @media(max-width:639px) {
-      .services-grid { grid-template-columns:1fr!important; gap:1rem!important; }
-      .svc-card { padding:1.4rem!important; }
-      .extras-grid { grid-template-columns:repeat(2,1fr)!important; }
-    }
-    @media(min-width:640px) and (max-width:1023px) {
-      .services-grid { grid-template-columns:repeat(2,1fr)!important; }
-      .extras-grid { grid-template-columns:repeat(3,1fr)!important; }
-    }
-
-    /* Why us */
-    @media(max-width:639px) {
-      .why-grid { grid-template-columns:1fr!important; gap:.85rem!important; }
-      .why-card { padding:1.2rem 1.1rem!important; }
-    }
-    @media(min-width:640px) and (max-width:1023px) {
-      .why-grid { grid-template-columns:repeat(2,1fr)!important; }
-    }
-
-    /* Process */
-    @media(max-width:479px) {
-      .process-grid { grid-template-columns:1fr!important; gap:.75rem!important; }
-      .step-card { padding:1.2rem 1rem!important; }
-    }
-    @media(min-width:480px) and (max-width:767px) {
-      .process-grid { grid-template-columns:repeat(2,1fr)!important; }
-    }
-    @media(min-width:768px) and (max-width:1023px) {
-      .process-grid { grid-template-columns:repeat(3,1fr)!important; }
-    }
-
-    /* Stats band */
-    @media(max-width:479px) {
-      .stats-band-grid { grid-template-columns:repeat(2,1fr)!important; gap:.65rem!important; }
-      .stat-box { padding:1.1rem .75rem!important; }
-    }
-    @media(min-width:480px) and (max-width:767px) {
-      .stats-band-grid { grid-template-columns:repeat(3,1fr)!important; }
-    }
-
-    /* FAQ */
-    @media(max-width:767px) {
-      .faq-grid { grid-template-columns:1fr!important; gap:.75rem!important; }
-      .faq-q { font-size:.86rem!important; }
-      .faq-body { font-size:.82rem!important; }
-    }
-
-    /* Contact */
-    @media(max-width:1023px) {
-      .contact-grid { grid-template-columns:1fr!important; gap:2rem!important; }
-    }
-
-    /* Promo */
-    @media(max-width:639px) {
-      .promo-btns { flex-direction:column; align-items:stretch; }
-      .promo-btns a { width:100%; justify-content:center; }
-      .promo-title { font-size:clamp(1.7rem,8vw,2.4rem)!important; }
-    }
-
-    /* Footer */
-    @media(max-width:479px) {
-      .footer-grid { grid-template-columns:1fr!important; }
-      .footer-brand { grid-column:1!important; }
-    }
-    @media(min-width:480px) and (max-width:767px) {
-      .footer-grid { grid-template-columns:repeat(2,1fr)!important; }
-      .footer-brand { grid-column:span 2!important; }
-    }
-    @media(min-width:768px) and (max-width:1023px) {
-      .footer-grid { grid-template-columns:repeat(2,1fr)!important; }
-      .footer-brand { grid-column:span 2!important; }
-    }
-
-    /* WA float */
-    @media(max-width:639px) {
-      .wa-float { bottom:1.2rem!important; right:1rem!important; width:50px!important; height:50px!important; }
-      .wa-float svg { width:24px!important; height:24px!important; }
-    }
-
-    /* Toast */
-    @media(max-width:479px) {
-      #toast { font-size:.78rem; padding:10px 14px; white-space:normal; text-align:center; max-width:88vw; }
-    }
-
-    /* Extra card touch */
-    @media(max-width:479px) {
-      .extra-card { padding:.9rem .75rem!important; }
-      .extra-card .extra-title { font-size:.82rem!important; }
-    }
-
-    /* Hero badges */
-    @media(max-width:374px) {
-      .hero-img-badge { display:none!important; }
-    }
-
-    /* Hero location badge */
-    @media(max-width:1023px) {
-      .hero-location-badge { bottom:-14px; left:-10px; padding:.75rem 1rem!important; }
-    }
-
-    /* Nav compact 1024–1199 */
-    @media(min-width:1024px) and (max-width:1199px) {
-      .nav-link { padding:8px 9px; font-size:.76rem; }
-    }
-
-    /* Ticker mobile speed */
-    @media(max-width:639px) {
-      .ticker-track { animation-duration:18s; }
-    }
-
-    /* Contact card mobile */
-    @media(max-width:479px) {
-      .contact-row { padding:.9rem!important; }
-      .contact-icon { width:38px!important; height:38px!important; font-size:1rem!important; }
-    }
-
-    /* Why icon/title mobile */
-    @media(max-width:479px) {
-      .why-icon { width:44px!important; height:44px!important; font-size:1.1rem!important; }
-      .why-title { font-size:.88rem!important; }
-    }
-
-    /* Step circle mobile */
-    @media(max-width:479px) {
-      .step-num { width:42px!important; height:42px!important; font-size:.95rem!important; }
-      .step-title { font-size:.86rem!important; }
-    }
-
-    /* WA box mobile */
-    @media(max-width:479px) {
-      .wa-box { padding:1.4rem 1.2rem!important; }
-      .wa-box-grid { grid-template-columns:1fr 1fr!important; gap:.6rem!important; }
-    }
-
-    /* SVC badge mobile */
-    @media(max-width:479px) {
-      .svc-badge { font-size:.58rem!important; padding:3px 8px!important; }
-    }
-
-    /* FAQ tap targets */
-    @media(max-width:639px) {
-      .faq-item .flex { padding:1rem!important; }
-      .faq-icon { width:32px!important; height:32px!important; flex-shrink:0; }
-    }
+    /* ════════════════════════════
+       CARROUSELS — SYSTÈME COMPLET
+    ════════════════════════════ */
     
-    /* Wood partnership section */
+    /* Conteneur principal */
+    .cr-outer {
+      margin: 1rem 0 1.1rem;
+      user-select: none;
+    }
+
+    /* Zone de défilement */
+    .cr-window {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      background: rgba(107,62,200,.05);
+      line-height: 0;
+    }
+
+    /* Piste des slides */
+    .cr-track {
+      display: flex;
+      transition: transform .55s cubic-bezier(.4,0,.2,1);
+      will-change: transform;
+    }
+
+    /* Slide individuel */
+    .cr-slide {
+      min-width: 100%;
+      flex-shrink: 0;
+      position: relative;
+      line-height: 0;
+    }
+
+    .cr-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      pointer-events: none;
+      -webkit-user-drag: none;
+    }
+
+    /* Overlay gradient bas */
+    .cr-gradient {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 55%;
+      background: linear-gradient(to top, rgba(26,10,60,.55) 0%, transparent 100%);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    /* Étiquette du slide */
+    .cr-label {
+      position: absolute;
+      bottom: 10px;
+      left: 12px;
+      right: 52px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: .6rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.88);
+      z-index: 3;
+      pointer-events: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Compteur */
+    .cr-counter {
+      position: absolute;
+      bottom: 9px;
+      right: 10px;
+      background: rgba(0,0,0,.42);
+      color: rgba(255,255,255,.9);
+      font-family: 'Syne', sans-serif;
+      font-size: .55rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      padding: 3px 8px;
+      border-radius: 20px;
+      backdrop-filter: blur(6px);
+      z-index: 4;
+      pointer-events: none;
+    }
+
+    /* Boutons prev / next */
+    .cr-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: 900;
+      line-height: 1;
+      background: rgba(255,255,255,.88);
+      color: #6B3EC8;
+      box-shadow: 0 2px 12px rgba(0,0,0,.18);
+      transition: all .22s;
+      z-index: 5;
+      backdrop-filter: blur(8px);
+      padding: 0;
+      flex-shrink: 0;
+    }
+    .cr-btn:hover {
+      background: #6B3EC8;
+      color: #fff;
+      transform: translateY(-50%) scale(1.08);
+      box-shadow: 0 4px 18px rgba(107,62,200,.4);
+    }
+    .cr-btn.cr-prev { left: 8px; }
+    .cr-btn.cr-next { right: 8px; }
+
+    /* Variante bois */
+    .cr-btn.wood { color: #8B4513; }
+    .cr-btn.wood:hover { background: #8B4513; color: #fff; box-shadow: 0 4px 18px rgba(139,69,19,.4); }
+
+    /* Indicateurs (dots) */
+    .cr-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      margin-top: 9px;
+    }
+    .cr-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      background: rgba(107,62,200,.18);
+      transition: all .3s;
+    }
+    .cr-dot.on {
+      background: #6B3EC8;
+      width: 18px;
+      border-radius: 3px;
+    }
+    .cr-dot.wood-on.on {
+      background: #8B4513;
+    }
+
+    /* Hauteurs des carrousels */
+    .cr-h-svc  { height: 190px; }
+    .cr-h-bois { height: 340px; }
+
+    @media(max-width:639px) {
+      .cr-h-svc  { height: 160px; }
+      .cr-h-bois { height: 240px; }
+      .cr-label  { font-size: .52rem; }
+      .cr-btn    { width: 26px; height: 26px; font-size: .85rem; }
+    }
+    @media(min-width:640px) and (max-width:1023px) {
+      .cr-h-svc  { height: 175px; }
+      .cr-h-bois { height: 290px; }
+    }
+
+    /* ── WOOD CARD ── */
     .wood-card { 
       background: linear-gradient(135deg, rgba(139, 69, 19, 0.03), rgba(101, 67, 33, 0.02));
       border: 1px solid rgba(139, 69, 19, 0.15);
@@ -337,6 +338,129 @@
       background: rgba(139, 69, 19, 0.08);
       border: 1px solid rgba(139, 69, 19, 0.2);
       color: #8B4513;
+    }
+
+    /* ══════════════════════════════════════
+       RESPONSIVE — MOBILE FIRST
+    ══════════════════════════════════════ */
+
+    @media(max-width:639px) {
+      .btn-v, .btn-wa, .btn-ghost { padding:11px 18px; font-size:.78rem; }
+    }
+    @media(max-width:639px) {
+      #hero { padding-top:3rem; padding-bottom:3rem; }
+      .hero-btns { flex-direction:column; }
+      .hero-btns a, .hero-btns button { width:100%; justify-content:center; }
+      .mini-stats-grid { grid-template-columns:repeat(3,1fr)!important; gap:8px!important; }
+      .mini-stat-val { font-size:clamp(1.2rem,5vw,1.5rem)!important; }
+      .mini-stat-label { font-size:.52rem!important; }
+    }
+    @media(min-width:640px) and (max-width:1023px) {
+      #hero { padding-top:4rem; padding-bottom:4rem; }
+    }
+    @media(max-width:639px) {
+      .services-grid { grid-template-columns:1fr!important; gap:1rem!important; }
+      .svc-card { padding:1.4rem!important; }
+      .extras-grid { grid-template-columns:repeat(2,1fr)!important; }
+    }
+    @media(min-width:640px) and (max-width:1023px) {
+      .services-grid { grid-template-columns:repeat(2,1fr)!important; }
+      .extras-grid { grid-template-columns:repeat(3,1fr)!important; }
+    }
+    @media(max-width:639px) {
+      .why-grid { grid-template-columns:1fr!important; gap:.85rem!important; }
+      .why-card { padding:1.2rem 1.1rem!important; }
+    }
+    @media(min-width:640px) and (max-width:1023px) {
+      .why-grid { grid-template-columns:repeat(2,1fr)!important; }
+    }
+    @media(max-width:479px) {
+      .process-grid { grid-template-columns:1fr!important; gap:.75rem!important; }
+      .step-card { padding:1.2rem 1rem!important; }
+    }
+    @media(min-width:480px) and (max-width:767px) {
+      .process-grid { grid-template-columns:repeat(2,1fr)!important; }
+    }
+    @media(min-width:768px) and (max-width:1023px) {
+      .process-grid { grid-template-columns:repeat(3,1fr)!important; }
+    }
+    @media(max-width:479px) {
+      .stats-band-grid { grid-template-columns:repeat(2,1fr)!important; gap:.65rem!important; }
+      .stat-box { padding:1.1rem .75rem!important; }
+    }
+    @media(min-width:480px) and (max-width:767px) {
+      .stats-band-grid { grid-template-columns:repeat(3,1fr)!important; }
+    }
+    @media(max-width:767px) {
+      .faq-grid { grid-template-columns:1fr!important; gap:.75rem!important; }
+      .faq-q { font-size:.86rem!important; }
+      .faq-body { font-size:.82rem!important; }
+    }
+    @media(max-width:1023px) {
+      .contact-grid { grid-template-columns:1fr!important; gap:2rem!important; }
+    }
+    @media(max-width:639px) {
+      .promo-btns { flex-direction:column; align-items:stretch; }
+      .promo-btns a { width:100%; justify-content:center; }
+      .promo-title { font-size:clamp(1.7rem,8vw,2.4rem)!important; }
+    }
+    @media(max-width:479px) {
+      .footer-grid { grid-template-columns:1fr!important; }
+      .footer-brand { grid-column:1!important; }
+    }
+    @media(min-width:480px) and (max-width:767px) {
+      .footer-grid { grid-template-columns:repeat(2,1fr)!important; }
+      .footer-brand { grid-column:span 2!important; }
+    }
+    @media(min-width:768px) and (max-width:1023px) {
+      .footer-grid { grid-template-columns:repeat(2,1fr)!important; }
+      .footer-brand { grid-column:span 2!important; }
+    }
+    @media(max-width:639px) {
+      .wa-float { bottom:1.2rem!important; right:1rem!important; width:50px!important; height:50px!important; }
+      .wa-float svg { width:24px!important; height:24px!important; }
+    }
+    @media(max-width:479px) {
+      #toast { font-size:.78rem; padding:10px 14px; white-space:normal; text-align:center; max-width:88vw; }
+    }
+    @media(max-width:479px) {
+      .extra-card { padding:.9rem .75rem!important; }
+      .extra-card .extra-title { font-size:.82rem!important; }
+    }
+    @media(max-width:374px) {
+      .hero-img-badge { display:none!important; }
+    }
+    @media(max-width:1023px) {
+      .hero-location-badge { bottom:-14px; left:-10px; padding:.75rem 1rem!important; }
+    }
+    @media(min-width:1024px) and (max-width:1199px) {
+      .nav-link { padding:8px 9px; font-size:.76rem; }
+    }
+    @media(max-width:639px) {
+      .ticker-track { animation-duration:18s; }
+    }
+    @media(max-width:479px) {
+      .contact-row { padding:.9rem!important; }
+      .contact-icon { width:38px!important; height:38px!important; font-size:1rem!important; }
+    }
+    @media(max-width:479px) {
+      .why-icon { width:44px!important; height:44px!important; font-size:1.1rem!important; }
+      .why-title { font-size:.88rem!important; }
+    }
+    @media(max-width:479px) {
+      .step-num { width:42px!important; height:42px!important; font-size:.95rem!important; }
+      .step-title { font-size:.86rem!important; }
+    }
+    @media(max-width:479px) {
+      .wa-box { padding:1.4rem 1.2rem!important; }
+      .wa-box-grid { grid-template-columns:1fr 1fr!important; gap:.6rem!important; }
+    }
+    @media(max-width:479px) {
+      .svc-badge { font-size:.58rem!important; padding:3px 8px!important; }
+    }
+    @media(max-width:639px) {
+      .faq-item .flex { padding:1rem!important; }
+      .faq-icon { width:32px!important; height:32px!important; flex-shrink:0; }
     }
   </style>
 </head>
@@ -359,8 +483,6 @@
 <header id="main-header" class="fixed top-0 left-0 right-0 z-[1000] transition-all duration-300"
   style="background:rgba(255,255,255,.92);backdrop-filter:blur(24px);border-bottom:1px solid rgba(107,62,200,.1);box-shadow:0 2px 20px rgba(107,62,200,.06);">
   <div class="max-w-[1320px] mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8" style="height:64px;">
-
-    <!-- Logo -->
     <a href="#hero" class="flex items-center gap-2 no-underline flex-shrink-0">
       <div style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#6B3EC8,#4A1A9E);border-radius:6px;">
         <img src="image.png" alt="Logo LEMATRANS" style="width:20px;height:20px;filter:drop-shadow(0 0 1px rgba(255,255,255,.4));">
@@ -370,8 +492,6 @@
         <div class="syne" style="font-size:.5rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#9B6EF5;margin-top:1px;">Cameroun SARL</div>
       </div>
     </a>
-
-    <!-- Desktop nav -->
     <nav class="hidden lg:flex gap-0.5">
       <a href="#services"  class="nav-link">Services</a>
       <a href="#bois"      class="nav-link">Négoce Bois</a>
@@ -380,8 +500,6 @@
       <a href="#faq"       class="nav-link">FAQ</a>
       <a href="#contact"   class="nav-link">Contact</a>
     </nav>
-
-    <!-- Right actions -->
     <div class="flex items-center gap-2">
       <a href="https://wa.me/237696797882?text=Bonjour%20LEMATRANS%2C%20je%20souhaite%20un%20renseignement." target="_blank" rel="noreferrer"
          class="btn-wa hidden sm:inline-flex flex-shrink-0" style="padding:9px 14px;font-size:.76rem;">
@@ -389,7 +507,6 @@
         <span class="hidden md:inline">696 797 882</span>
         <span class="inline md:hidden">WA</span>
       </a>
-      <!-- Hamburger -->
       <button id="hamburger" class="flex flex-col items-center justify-center gap-[5px] rounded-[10px] lg:hidden flex-shrink-0"
         style="width:40px;height:40px;background:rgba(107,62,200,.08);border:1px solid rgba(107,62,200,.2);cursor:pointer;padding:10px 8px;">
         <span id="h1" class="block rounded-sm transition-all duration-300" style="height:2px;width:18px;background:#6B3EC8;"></span>
@@ -398,38 +515,22 @@
       </button>
     </div>
   </div>
-
   <!-- Mobile menu -->
   <div id="mobile-menu" class="mobile-menu hidden lg:hidden"
     style="background:#FFFFFF;border-top:1px solid rgba(107,62,200,.1);box-shadow:0 8px 30px rgba(107,62,200,.1);">
     <div style="padding:.75rem 1.25rem 1.25rem;">
-      <a href="#services"  onclick="closeMenu()" class="flex items-center py-3.5 syne font-bold uppercase tracking-wider no-underline" style="font-size:.92rem;color:#4A3070;border-bottom:1px solid rgba(107,62,200,.07);">
-        <span style="margin-right:.75rem;font-size:1.1rem;">🚛</span>Services
-      </a>
-      <a href="#bois"      onclick="closeMenu()" class="flex items-center py-3.5 syne font-bold uppercase tracking-wider no-underline" style="font-size:.92rem;color:#4A3070;border-bottom:1px solid rgba(107,62,200,.07);">
-        <span style="margin-right:.75rem;font-size:1.1rem;">🌳</span>Négoce Bois
-      </a>
-      <a href="#pourquoi"  onclick="closeMenu()" class="flex items-center py-3.5 syne font-bold uppercase tracking-wider no-underline" style="font-size:.92rem;color:#4A3070;border-bottom:1px solid rgba(107,62,200,.07);">
-        <span style="margin-right:.75rem;font-size:1.1rem;">💼</span>Pourquoi nous
-      </a>
-      <a href="#process"   onclick="closeMenu()" class="flex items-center py-3.5 syne font-bold uppercase tracking-wider no-underline" style="font-size:.92rem;color:#4A3070;border-bottom:1px solid rgba(107,62,200,.07);">
-        <span style="margin-right:.75rem;font-size:1.1rem;">⚙️</span>Processus
-      </a>
-      <a href="#faq"       onclick="closeMenu()" class="flex items-center py-3.5 syne font-bold uppercase tracking-wider no-underline" style="font-size:.92rem;color:#4A3070;border-bottom:1px solid rgba(107,62,200,.07);">
-        <span style="margin-right:.75rem;font-size:1.1rem;">❓</span>FAQ
-      </a>
-      <a href="#contact"   onclick="closeMenu()" class="flex items-center py-3.5 syne font-bold uppercase tracking-wider no-underline" style="font-size:.92rem;color:#4A3070;border-bottom:1px solid rgba(107,62,200,.07);">
-        <span style="margin-right:.75rem;font-size:1.1rem;">📍</span>Contact
-      </a>
+      <a href="#services"  onclick="closeMenu()" class="flex items-center py-3.5 syne font-bold uppercase tracking-wider no-underline" style="font-size:.92rem;color:#4A3070;border-bottom:1px solid rgba(107,62,200,.07);"><span style="margin-right:.75rem;font-size:1.1rem;">🚛</span>Services</a>
+      <a href="#bois"      onclick="closeMenu()" class="flex items-center py-3.5 syne font-bold uppercase tracking-wider no-underline" style="font-size:.92rem;color:#4A3070;border-bottom:1px solid rgba(107,62,200,.07);"><span style="margin-right:.75rem;font-size:1.1rem;">🌳</span>Négoce Bois</a>
+      <a href="#pourquoi"  onclick="closeMenu()" class="flex items-center py-3.5 syne font-bold uppercase tracking-wider no-underline" style="font-size:.92rem;color:#4A3070;border-bottom:1px solid rgba(107,62,200,.07);"><span style="margin-right:.75rem;font-size:1.1rem;">💼</span>Pourquoi nous</a>
+      <a href="#process"   onclick="closeMenu()" class="flex items-center py-3.5 syne font-bold uppercase tracking-wider no-underline" style="font-size:.92rem;color:#4A3070;border-bottom:1px solid rgba(107,62,200,.07);"><span style="margin-right:.75rem;font-size:1.1rem;">⚙️</span>Processus</a>
+      <a href="#faq"       onclick="closeMenu()" class="flex items-center py-3.5 syne font-bold uppercase tracking-wider no-underline" style="font-size:.92rem;color:#4A3070;border-bottom:1px solid rgba(107,62,200,.07);"><span style="margin-right:.75rem;font-size:1.1rem;">❓</span>FAQ</a>
+      <a href="#contact"   onclick="closeMenu()" class="flex items-center py-3.5 syne font-bold uppercase tracking-wider no-underline" style="font-size:.92rem;color:#4A3070;border-bottom:1px solid rgba(107,62,200,.07);"><span style="margin-right:.75rem;font-size:1.1rem;">📍</span>Contact</a>
       <div class="grid grid-cols-2 gap-2.5 mt-4">
-        <a href="https://wa.me/237696797882?text=Bonjour%20LEMATRANS%2C%20je%20souhaite%20un%20renseignement." target="_blank" rel="noreferrer"
-           class="btn-wa justify-center" style="font-size:.78rem;padding:10px 12px;">
+        <a href="https://wa.me/237696797882?text=Bonjour%20LEMATRANS%2C%20je%20souhaite%20un%20renseignement." target="_blank" rel="noreferrer" class="btn-wa justify-center" style="font-size:.78rem;padding:10px 12px;">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.534 5.853L0 24l6.335-1.521A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.945 9.945 0 01-5.33-1.44l-.38-.225-3.962.951.972-3.867-.248-.389A9.945 9.945 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
           WhatsApp
         </a>
-        <a href="tel:+237696797882" class="btn-ghost justify-center" style="font-size:.78rem;padding:10px 12px;">
-          📞 Appeler
-        </a>
+        <a href="tel:+237696797882" class="btn-ghost justify-center" style="font-size:.78rem;padding:10px 12px;">📞 Appeler</a>
       </div>
     </div>
   </div>
@@ -455,7 +556,7 @@
     <span style="color:rgba(255,255,255,.4);">·</span>
     <span class="syne font-bold uppercase whitespace-nowrap" style="font-size:clamp(.58rem,.75vw,.72rem);letter-spacing:.12em;color:rgba(255,255,255,.9);">📍 B.P. 1780 DOUALA</span>
     <span style="color:rgba(255,255,255,.4);">·</span>
-    <!-- Duplicate for seamless loop -->
+    <!-- Duplicate -->
     <span class="syne font-bold uppercase whitespace-nowrap" style="font-size:clamp(.58rem,.75vw,.72rem);letter-spacing:.12em;color:rgba(255,255,255,.9);">🚛 TRANSPORT ROUTIER</span>
     <span style="color:rgba(255,255,255,.4);">·</span>
     <span class="syne font-bold uppercase whitespace-nowrap" style="font-size:clamp(.58rem,.75vw,.72rem);letter-spacing:.12em;color:rgba(255,255,255,.9);">📦 LOGISTIQUE SPÉCIALISÉE</span>
@@ -481,15 +582,10 @@
   style="min-height:100svh;background:linear-gradient(135deg,#FAF7FF 0%,#EDE3FF 50%,#F5EFFE 100%);padding-top:clamp(3rem,8vw,6rem);padding-bottom:clamp(3rem,8vw,6rem);">
   <div class="grid-bg absolute inset-0 opacity-60"></div>
   <div class="absolute inset-0" style="background:radial-gradient(ellipse 60% 60% at 80% 40%,rgba(155,110,245,.15),transparent 60%),radial-gradient(ellipse 40% 40% at 10% 80%,rgba(107,62,200,.1),transparent 55%);"></div>
-
-  <!-- Spinning rings desktop only -->
   <div class="ring-deco absolute pointer-events-none" style="right:-80px;top:50%;width:500px;height:500px;border-radius:50%;border:1.5px solid rgba(107,62,200,.1);animation:spinSlow 60s linear infinite;"></div>
   <div class="ring-deco absolute pointer-events-none" style="right:40px;top:50%;width:340px;height:340px;border-radius:50%;border:1.5px solid rgba(107,62,200,.07);animation:spinRev 40s linear infinite;"></div>
-
   <div class="relative z-10 w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-
-      <!-- LEFT -->
       <div class="reveal-left">
         <div class="inline-flex items-center gap-2 syne font-bold uppercase mb-5 rounded-full"
           style="background:rgba(107,62,200,.1);border:1px solid rgba(107,62,200,.22);color:#6B3EC8;padding:6px 14px;font-size:clamp(.6rem,.9vw,.7rem);letter-spacing:.1em;">
@@ -498,7 +594,7 @@
         <h1 class="playfair hero-title mb-5" style="font-size:clamp(2.4rem,7vw,5.5rem);font-weight:900;line-height:.96;color:#1A0A3C;">
           <span class="block">Votre</span>
           <span class="block">Partenaire</span>
-          <span >Logistique</span>
+          <span>Logistique</span>
         </h1>
         <p class="hero-desc mb-8" style="font-size:clamp(.88rem,1.4vw,1.05rem);color:#6B5B8D;line-height:1.8;max-width:500px;">
           LEMATRANS CAMEROUN SARL, spécialiste du <strong style="color:#6B3EC8;">Transport Routier</strong>,
@@ -516,8 +612,6 @@
             Nous Contacter
           </a>
         </div>
-
-        <!-- Mini stats -->
         <div class="mini-stats-grid grid gap-2.5" style="grid-template-columns:repeat(3,1fr);">
           <div class="stat-box light-card rounded-2xl text-center" style="padding:clamp(10px,2.5vw,16px) clamp(8px,2vw,14px);">
             <div class="playfair shimmer-glow mini-stat-val" style="font-size:clamp(1.4rem,4vw,2rem);font-weight:800;line-height:1;">10+</div>
@@ -533,8 +627,6 @@
           </div>
         </div>
       </div>
-
-      <!-- RIGHT -->
       <div class="reveal-right hidden sm:flex items-center justify-center mt-4 lg:mt-0">
         <div class="w-full" style="max-width:520px;position:relative;">
           <div class="relative rounded-[22px] overflow-hidden"
@@ -568,7 +660,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -594,20 +685,64 @@
 
     <div class="services-grid grid gap-5 mb-10" style="grid-template-columns:repeat(auto-fit,minmax(min(290px,100%),1fr));">
 
-      <!-- Transport Routier -->
+      <!-- ── TRANSPORT ROUTIER ── -->
       <div class="svc-card light-card rounded-[20px] p-7 reveal" style="animation-delay:0s;">
-        <div class="flex items-center justify-center rounded-[16px] mb-4"
-          style="width:58px;height:58px;background:linear-gradient(135deg,rgba(155,110,245,.15),rgba(107,62,200,.06));border:1px solid rgba(107,62,200,.15);font-size:1.7rem;">🚛</div>
-        <div class="syne font-bold uppercase mb-1" style="font-size:.62rem;letter-spacing:.13em;color:#9B6EF5;">Vrac · Matériaux </div>
-        <h3 class="playfair" style="font-weight:800;font-size:1.4rem;margin-bottom:.65rem;color:#1A0A3C;">Transport Routier</h3>
+        <div class="flex items-center gap-3 mb-1">
+          <div class="flex items-center justify-center rounded-[16px] flex-shrink-0"
+            style="width:52px;height:52px;background:linear-gradient(135deg,rgba(155,110,245,.15),rgba(107,62,200,.06));border:1px solid rgba(107,62,200,.15);font-size:1.6rem;">🚛</div>
+          <div>
+            <div class="syne font-bold uppercase" style="font-size:.6rem;letter-spacing:.13em;color:#9B6EF5;">Vrac · Matériaux</div>
+            <h3 class="playfair" style="font-weight:800;font-size:1.3rem;line-height:1.1;color:#1A0A3C;">Transport Routier</h3>
+          </div>
+        </div>
+
+        <!-- CARROUSEL TRANSPORT ROUTIER -->
+        <!-- 📸 Remplacez les src= par vos propres photos -->
+        <div class="cr-outer" data-cr="transport"
+             onmouseenter="CR.pause('transport')" onmouseleave="CR.resume('transport')">
+          <div class="cr-window cr-h-svc">
+            <div class="cr-track" id="cr-track-transport">
+              <div class="cr-slide">
+                <img src="/Photo1.jpeg" alt="Transport de vrac Cameroun" style="height:190px;" onerror="this.src='https://placehold.co/700x190/EDE3FF/6B3EC8?text=Photo+1+%E2%80%94+Transport+de+vrac'"/>
+                <div class="cr-gradient"></div>
+                <div class="cr-label">Transport de vrac sur le territoire</div>
+              </div>
+              <div class="cr-slide">
+                <img src="/Photo2.jpeg" alt="Camion fret Cameroun" style="height:190px;" onerror="this.src='https://placehold.co/700x190/EDE3FF/6B3EC8?text=Photo+2+%E2%80%94+Flotte+de+camions'"/>
+                <div class="cr-gradient"></div>
+                <div class="cr-label">Flotte de véhicules adaptés</div>
+              </div>
+              <div class="cr-slide">
+                <img src="/Photo3.jpeg" alt="Transport matériaux construction" style="height:190px;" onerror="this.src='https://placehold.co/700x190/EDE3FF/6B3EC8?text=Photo+3+%E2%80%94+Mat%C3%A9riaux+construction'"/>
+                <div class="cr-gradient"></div>
+                <div class="cr-label">Matériaux de construction</div>
+              </div>
+              <div class="cr-slide">
+                <img src="/Photo4.jpeg" alt="Transport bois et marchandises" style="height:190px;" onerror="this.src='https://placehold.co/700x190/EDE3FF/6B3EC8?text=Photo+4+%E2%80%94+Bois+et+marchandises'"/>
+                <div class="cr-gradient"></div>
+                <div class="cr-label">Bois et marchandises diverses</div>
+              </div>
+            </div>
+            <button class="cr-btn cr-prev" onclick="CR.move('transport',-1)" aria-label="Photo précédente">&#8249;</button>
+            <button class="cr-btn cr-next" onclick="CR.move('transport', 1)" aria-label="Photo suivante">&#8250;</button>
+            <div class="cr-counter" id="cr-counter-transport">1 / 4</div>
+          </div>
+          <div class="cr-dots" id="cr-dots-transport">
+            <button class="cr-dot on" onclick="CR.go('transport',0)" aria-label="Photo 1"></button>
+            <button class="cr-dot"    onclick="CR.go('transport',1)" aria-label="Photo 2"></button>
+            <button class="cr-dot"    onclick="CR.go('transport',2)" aria-label="Photo 3"></button>
+            <button class="cr-dot"    onclick="CR.go('transport',3)" aria-label="Photo 4"></button>
+          </div>
+        </div>
+
         <p class="mb-4" style="font-size:.84rem;color:#6B5B8D;line-height:1.75;">
           Transport de vrac, matériaux de construction, sur l'ensemble du territoire camerounais.
         </p>
         <ul class="mb-6" style="list-style:none;display:flex;flex-direction:column;gap:6px;">
-          <li class="flex items-center gap-2" style="font-size:.8rem;color:#6B5B8D;"><span style="color:#9B6EF5;font-size:.66rem;">✦</span>Transport de vrac </li>
-          <li class="flex items-center gap-2" style="font-size:.8rem;color:#6B5B8D;"><span style="color:#9B6EF5;font-size:.66rem;">✦</span> Bois</li>
-          <li class="flex items-center gap-2" style="font-size:.8rem;color:#6B5B8D;"><span style="color:#9B6EF5;font-size:.66rem;">✦</span>Materiaux diverses</li>
-          <li class="flex items-center gap-2" style="font-size:.8rem;color:#6B5B8D;"><span style="color:#9B6EF5;font-size:.66rem;">✦</span>Vehicules et Machines industrielles</li>
+          <li class="flex items-center gap-2" style="font-size:.8rem;color:#6B5B8D;"><span style="color:#9B6EF5;font-size:.66rem;">✦</span>Transport de vrac</li>
+          <li class="flex items-center gap-2" style="font-size:.8rem;color:#6B5B8D;"><span style="color:#9B6EF5;font-size:.66rem;">✦</span>Bois</li>
+          <li class="flex items-center gap-2" style="font-size:.8rem;color:#6B5B8D;"><span style="color:#9B6EF5;font-size:.66rem;">✦</span>Matériaux diverses</li>
+          <li class="flex items-center gap-2" style="font-size:.8rem;color:#6B5B8D;"><span style="color:#9B6EF5;font-size:.66rem;">✦</span>Véhicules et Machines industrielles</li>
         </ul>
         <a href="https://wa.me/237696797882?text=Bonjour%20LEMATRANS%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20votre%20service%20de%20Transport%20Routier." target="_blank" rel="noreferrer" class="btn-v w-full justify-center" style="text-decoration:none;">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.534 5.853L0 24l6.335-1.521A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.945 9.945 0 01-5.33-1.44l-.38-.225-3.962.951.972-3.867-.248-.389A9.945 9.945 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
@@ -615,12 +750,56 @@
         </a>
       </div>
 
-      <!-- Logistique Spécialisée -->
+      <!-- ── LOGISTIQUE SPÉCIALISÉE ── -->
       <div class="svc-card light-card rounded-[20px] p-7 reveal" style="animation-delay:.1s;">
-        <div class="flex items-center justify-center rounded-[16px] mb-4"
-          style="width:58px;height:58px;background:linear-gradient(135deg,rgba(155,110,245,.15),rgba(107,62,200,.06));border:1px solid rgba(107,62,200,.15);font-size:1.7rem;">⚙️</div>
-        <div class="syne font-bold uppercase mb-1" style="font-size:.62rem;letter-spacing:.13em;color:#9B6EF5;">Machines · Véhicules · Modulaires</div>
-        <h3 class="playfair" style="font-weight:800;font-size:1.4rem;margin-bottom:.65rem;color:#1A0A3C;">Logistique Spécialisée</h3>
+        <div class="flex items-center gap-3 mb-1">
+          <div class="flex items-center justify-center rounded-[16px] flex-shrink-0"
+            style="width:52px;height:52px;background:linear-gradient(135deg,rgba(155,110,245,.15),rgba(107,62,200,.06));border:1px solid rgba(107,62,200,.15);font-size:1.6rem;">⚙️</div>
+          <div>
+            <div class="syne font-bold uppercase" style="font-size:.6rem;letter-spacing:.13em;color:#9B6EF5;">Machines · Véhicules · Modulaires</div>
+            <h3 class="playfair" style="font-weight:800;font-size:1.3rem;line-height:1.1;color:#1A0A3C;">Logistique Spécialisée</h3>
+          </div>
+        </div>
+
+        <!-- CARROUSEL LOGISTIQUE SPÉCIALISÉE -->
+        <!-- 📸 Remplacez les src= par vos propres photos -->
+        <div class="cr-outer" data-cr="logistique"
+             onmouseenter="CR.pause('logistique')" onmouseleave="CR.resume('logistique')">
+          <div class="cr-window cr-h-svc">
+            <div class="cr-track" id="cr-track-logistique">
+              <div class="cr-slide">
+                <img src="/Photo8.jpeg" alt="Transport machines industrielles" style="height:190px;" onerror="this.src='https://placehold.co/700x190/EDE3FF/6B3EC8?text=Photo+1+%E2%80%94+Machines+industrielles'"/>
+                <div class="cr-gradient"></div>
+                <div class="cr-label">Transport de machines industrielles</div>
+              </div>
+              <div class="cr-slide">
+                <img src="/Photo5.jpeg" alt="Engins et équipements lourds" style="height:190px;" onerror="this.src='https://placehold.co/700x190/EDE3FF/6B3EC8?text=Photo+2+%E2%80%94+Engins+lourds'"/>
+                <div class="cr-gradient"></div>
+                <div class="cr-label">Engins et équipements lourds</div>
+              </div>
+              <div class="cr-slide">
+                <img src="/Photo6.jpeg" alt="Transport de véhicules" style="height:190px;" onerror="this.src='https://placehold.co/700x190/EDE3FF/6B3EC8?text=Photo+3+%E2%80%94+Transport+v%C3%A9hicules'"/>
+                <div class="cr-gradient"></div>
+                <div class="cr-label">Transport de véhicules spéciaux</div>
+              </div>
+              <div class="cr-slide">
+                <img src="/Photo7.jpeg" alt="Constructions modulaires transportables" style="height:190px;" onerror="this.src='https://placehold.co/700x190/EDE3FF/6B3EC8?text=Photo+4+%E2%80%94+Constructions+modulaires'"/>
+                <div class="cr-gradient"></div>
+                <div class="cr-label">Constructions transportables</div>
+              </div>
+            </div>
+            <button class="cr-btn cr-prev" onclick="CR.move('logistique',-1)" aria-label="Photo précédente">&#8249;</button>
+            <button class="cr-btn cr-next" onclick="CR.move('logistique', 1)" aria-label="Photo suivante">&#8250;</button>
+            <div class="cr-counter" id="cr-counter-logistique">1 / 4</div>
+          </div>
+          <div class="cr-dots" id="cr-dots-logistique">
+            <button class="cr-dot on" onclick="CR.go('logistique',0)" aria-label="Photo 1"></button>
+            <button class="cr-dot"    onclick="CR.go('logistique',1)" aria-label="Photo 2"></button>
+            <button class="cr-dot"    onclick="CR.go('logistique',2)" aria-label="Photo 3"></button>
+            <button class="cr-dot"    onclick="CR.go('logistique',3)" aria-label="Photo 4"></button>
+          </div>
+        </div>
+
         <p class="mb-4" style="font-size:.84rem;color:#6B5B8D;line-height:1.75;">
           Transport et manutention de machines industrielles, véhicules et constructions transportables. Solutions sur mesure pour les charges hors-norme.
         </p>
@@ -636,12 +815,56 @@
         </a>
       </div>
 
-      <!-- Import-Export -->
+      <!-- ── IMPORT — EXPORT ── -->
       <div class="svc-card light-card rounded-[20px] p-7 reveal" style="animation-delay:.2s;">
-        <div class="flex items-center justify-center rounded-[16px] mb-4"
-          style="width:58px;height:58px;background:linear-gradient(135deg,rgba(155,110,245,.15),rgba(107,62,200,.06));border:1px solid rgba(107,62,200,.15);font-size:1.7rem;">🌍</div>
-        <div class="syne font-bold uppercase mb-1" style="font-size:.62rem;letter-spacing:.13em;color:#9B6EF5;">Échanges Internationaux</div>
-        <h3 class="playfair" style="font-weight:800;font-size:1.4rem;margin-bottom:.65rem;color:#1A0A3C;">Import — Export</h3>
+        <div class="flex items-center gap-3 mb-1">
+          <div class="flex items-center justify-center rounded-[16px] flex-shrink-0"
+            style="width:52px;height:52px;background:linear-gradient(135deg,rgba(155,110,245,.15),rgba(107,62,200,.06));border:1px solid rgba(107,62,200,.15);font-size:1.6rem;">🌍</div>
+          <div>
+            <div class="syne font-bold uppercase" style="font-size:.6rem;letter-spacing:.13em;color:#9B6EF5;">Échanges Internationaux</div>
+            <h3 class="playfair" style="font-weight:800;font-size:1.3rem;line-height:1.1;color:#1A0A3C;">Import — Export</h3>
+          </div>
+        </div>
+
+        <!-- CARROUSEL IMPORT-EXPORT -->
+        <!-- 📸 Remplacez les src= par vos propres photos -->
+        <div class="cr-outer" data-cr="import"
+             onmouseenter="CR.pause('import')" onmouseleave="CR.resume('import')">
+          <div class="cr-window cr-h-svc">
+            <div class="cr-track" id="cr-track-import">
+              <div class="cr-slide">
+                <img src="/Photo11.jpeg" alt="Port de Douala conteneurs" style="height:190px;" onerror="this.src='https://placehold.co/700x190/EDE3FF/6B3EC8?text=Photo+1+%E2%80%94+Port+de+Douala'"/>
+                <div class="cr-gradient"></div>
+                <div class="cr-label">Port international — Douala</div>
+              </div>
+              <div class="cr-slide">
+                <img src="/Photo12.jpeg" alt="Conteneurs maritimes export" style="height:190px;" onerror="this.src='https://placehold.co/700x190/EDE3FF/6B3EC8?text=Photo+2+%E2%80%94+Conteneurs+maritimes'"/>
+                <div class="cr-gradient"></div>
+                <div class="cr-label">Conteneurs — fret maritime</div>
+              </div>
+              <div class="cr-slide">
+                <img src="/Photo13.jpeg" alt="Fret aérien international" style="height:190px;" onerror="this.src='https://placehold.co/700x190/EDE3FF/6B3EC8?text=Photo+3+%E2%80%94+Fret+a%C3%A9rien'"/>
+                <div class="cr-gradient"></div>
+                <div class="cr-label">Fret aérien — liaisons internationales</div>
+              </div>
+              <div class="cr-slide">
+                <img src="/Photo10.jpeg" alt="Dédouanement et conformité" style="height:190px;" onerror="this.src='https://placehold.co/700x190/EDE3FF/6B3EC8?text=Photo+4+%E2%80%94+D%C3%A9douanement'"/>
+                <div class="cr-gradient"></div>
+                <div class="cr-label">Dédouanement &amp; conformité douanière</div>
+              </div>
+            </div>
+            <button class="cr-btn cr-prev" onclick="CR.move('import',-1)" aria-label="Photo précédente">&#8249;</button>
+            <button class="cr-btn cr-next" onclick="CR.move('import', 1)" aria-label="Photo suivante">&#8250;</button>
+            <div class="cr-counter" id="cr-counter-import">1 / 4</div>
+          </div>
+          <div class="cr-dots" id="cr-dots-import">
+            <button class="cr-dot on" onclick="CR.go('import',0)" aria-label="Photo 1"></button>
+            <button class="cr-dot"    onclick="CR.go('import',1)" aria-label="Photo 2"></button>
+            <button class="cr-dot"    onclick="CR.go('import',2)" aria-label="Photo 3"></button>
+            <button class="cr-dot"    onclick="CR.go('import',3)" aria-label="Photo 4"></button>
+          </div>
+        </div>
+
         <p class="mb-4" style="font-size:.84rem;color:#6B5B8D;line-height:1.75;">
           Gestion complète des opérations d'import-export avec expertise douanière. Expéditions internationales enregistrées vers l'Asie, l'Europe et l'Afrique.
         </p>
@@ -674,7 +897,7 @@
 
 
 <!-- ══════════════════════════════════════
-     NOUVELLE SECTION: NÉGOCE BOIS
+     NÉGOCE BOIS
 ══════════════════════════════════════ -->
 <section id="bois" class="bg-light-section px-4 sm:px-6 lg:px-8 section-pad">
   <div class="max-w-[1320px] mx-auto">
@@ -704,7 +927,6 @@
           <p class="mb-6" style="font-size:.92rem;color:#6B5B8D;line-height:1.8;">
             Nous assurons la gestion logistique complète pour garantir des opérations fiables, sécurisées et traçables, de la forêt au client final.
           </p>
-          
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-7">
             <div class="flex items-start gap-3">
               <span class="syne font-bold" style="color:#8B4513;font-size:1.1rem;">✦</span>
@@ -735,34 +957,65 @@
               </div>
             </div>
           </div>
-          
-          <a href="https://wa.me/237696797882?text=Bonjour%20LEMATRANS%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20votre%20service%20de%20N%C3%A9goce%20Bois." target="_blank" rel="noreferrer" 
+          <a href="https://wa.me/237696797882?text=Bonjour%20LEMATRANS%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20votre%20service%20de%20N%C3%A9goce%20Bois." target="_blank" rel="noreferrer"
              class="btn-v" style="font-size:.82rem;padding:12px 24px;">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.534 5.853L0 24l6.335-1.521A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.945 9.945 0 01-5.33-1.44l-.38-.225-3.962.951.972-3.867-.248-.389A9.945 9.945 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-            Contactez nous pour le negoce Bois
+            Contactez nous pour le négoce Bois
           </a>
         </div>
-        
+
+        <!-- CARROUSEL NÉGOCE BOIS -->
+        <!-- 📸 Remplacez les src= par vos propres photos -->
         <div class="relative">
-          <div class="rounded-[20px] overflow-hidden border border-rgba(139,69,19,.15) shadow-lg" style="box-shadow:0 12px 40px rgba(139,69,19,.12);">
-            <img src="https://images.unsplash.com/photo-1542600176-397e6b62d5e5?w=600&h=400&fit=crop" 
-                 alt="Négoce bois qualité" 
-                 class="w-full h-64 sm:h-80 object-cover"
-                 style="min-height:240px;"
-                 onerror="this.src='https://placehold.co/600x400/F5E9D9/8B4513?text=BOIS+QUALITÉ'"/>
-            <div class="absolute inset-0" style="background:linear-gradient(135deg,rgba(139,69,19,.08),transparent 60%);"></div>
+          <div class="cr-outer" data-cr="bois"
+               onmouseenter="CR.pause('bois')" onmouseleave="CR.resume('bois')">
+            <div class="cr-window cr-h-bois" style="border-radius:20px;border:1px solid rgba(139,69,19,.15);box-shadow:0 12px 40px rgba(139,69,19,.12);">
+              <div class="cr-track" id="cr-track-bois">
+                <div class="cr-slide">
+                  <img src="Photo17.jpeg" alt="Grumes bois Cameroun" style="height:340px;" onerror="this.src='https://placehold.co/700x340/F5E9D9/8B4513?text=Photo+1+%E2%80%94+Grumes+bois'"/>
+                  <div class="cr-gradient" style="background:linear-gradient(to top,rgba(101,67,33,.6),transparent);"></div>
+                  <div class="cr-label" style="color:rgba(255,255,255,.9);">Grumes de qualité — forêts du Cameroun</div>
+                </div>
+                <div class="cr-slide">
+                  <img src="Photo18.jpeg" alt="Parc à bois et stockage" style="height:340px;" onerror="this.src='https://placehold.co/700x340/F5E9D9/8B4513?text=Photo+2+%E2%80%94+Parc+%C3%A0+bois'"/>
+                  <div class="cr-gradient" style="background:linear-gradient(to top,rgba(101,67,33,.6),transparent);"></div>
+                  <div class="cr-label" style="color:rgba(255,255,255,.9);">Parc à bois — stockage et tri</div>
+                </div>
+                <div class="cr-slide">
+                  <img src="Photo14.jpeg" alt="Forêt tropicale Cameroun" style="height:340px;" onerror="this.src='https://placehold.co/700x340/F5E9D9/8B4513?text=Photo+3+%E2%80%94+For%C3%AAt+tropicale'"/>
+                  <div class="cr-gradient" style="background:linear-gradient(to top,rgba(101,67,33,.6),transparent);"></div>
+                  <div class="cr-label" style="color:rgba(255,255,255,.9);">Forêt tropicale — ressources certifiées</div>
+                </div>
+                <div class="cr-slide">
+                  <img src="Photo15.jpeg" alt="Planches bois sciées export" style="height:340px;" onerror="this.src='https://placehold.co/700x340/F5E9D9/8B4513?text=Photo+4+%E2%80%94+Bois+sci%C3%A9'"/>
+                  <div class="cr-gradient" style="background:linear-gradient(to top,rgba(101,67,33,.6),transparent);"></div>
+                  <div class="cr-label" style="color:rgba(255,255,255,.9);">Bois scié — prêt pour l'exportation</div>
+                </div>
+              </div>
+              <button class="cr-btn cr-prev wood" onclick="CR.move('bois',-1)" aria-label="Photo précédente">&#8249;</button>
+              <button class="cr-btn cr-next wood" onclick="CR.move('bois', 1)" aria-label="Photo suivante">&#8250;</button>
+              <div class="cr-counter" id="cr-counter-bois" style="background:rgba(101,67,33,.45);">1 / 4</div>
+            </div>
+            <div class="cr-dots" id="cr-dots-bois">
+              <button class="cr-dot wood-on on" onclick="CR.go('bois',0)" aria-label="Photo 1"></button>
+              <button class="cr-dot wood-on"    onclick="CR.go('bois',1)" aria-label="Photo 2"></button>
+              <button class="cr-dot wood-on"    onclick="CR.go('bois',2)" aria-label="Photo 3"></button>
+              <button class="cr-dot wood-on"    onclick="CR.go('bois',3)" aria-label="Photo 4"></button>
+            </div>
           </div>
-          <div class="absolute -bottom-4 -right-4 wood-card light-card rounded-xl p-3 flex items-center gap-2 shadow-md" style="border-color:rgba(139,69,19,.2);">
+          <!-- Badge flottant -->
+          <div class="absolute -bottom-4 -right-2 sm:-right-4 wood-card light-card rounded-xl p-3 flex items-center gap-2 shadow-md" style="border-color:rgba(139,69,19,.2);z-index:10;">
             <span style="font-size:1.3rem;">🌲</span>
             <div>
               <div class="syne font-bold" style="font-size:.7rem;color:#1A0A3C;">Bois Certifiés</div>
-              <div style="font-size:.62rem;color:#6B5B8D;">Construction & Export</div>
+              <div style="font-size:.62rem;color:#6B5B8D;">Construction &amp; Export</div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
-    
+
     <!-- Wood Applications Grid -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 reveal">
       <div class="light-card rounded-2xl p-5 hover-lift reveal" style="animation-delay:.1s;">
@@ -772,7 +1025,6 @@
         </div>
         <p style="font-size:.82rem;color:#6B5B8D;line-height:1.7;">Bois de charpente, panneaux, parquets et matériaux pour le BTP camerounais.</p>
       </div>
-      
       <div class="light-card rounded-2xl p-5 hover-lift reveal" style="animation-delay:.2s;">
         <div class="flex items-center gap-3 mb-3">
           <div class="flex items-center justify-center rounded-xl wood-icon" style="width:44px;height:44px;font-size:1.3rem;">🏭</div>
@@ -780,7 +1032,6 @@
         </div>
         <p style="font-size:.82rem;color:#6B5B8D;line-height:1.7;">Bois industriels pour la transformation, l'ameublement et la menuiserie.</p>
       </div>
-      
       <div class="light-card rounded-2xl p-5 hover-lift reveal" style="animation-delay:.3s;">
         <div class="flex items-center gap-3 mb-3">
           <div class="flex items-center justify-center rounded-xl wood-icon" style="width:44px;height:44px;font-size:1.3rem;">🌍</div>
@@ -970,7 +1221,6 @@
       <p class="section-desc" style="color:#6B5B8D;max-width:500px;margin:0 auto;line-height:1.8;">Tout ce que vous devez savoir avant de nous confier vos opérations.</p>
     </div>
     <div class="faq-grid grid gap-3" style="grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));">
-
       <div class="faq-item rounded-2xl overflow-hidden cursor-pointer transition-all duration-300" onclick="toggleFaq(this)">
         <div class="flex items-center justify-between gap-3 p-5">
           <span class="faq-q syne font-bold flex-1" style="font-size:clamp(.82rem,1.1vw,.92rem);color:#1A0A3C;">Qu'est-ce qu'un commissaire agréé en douane ?</span>
@@ -978,15 +1228,13 @@
         </div>
         <div class="faq-body">Un commissionnaire agréé en douane est un professionnel habilité par les autorités douanières à réaliser toutes les formalités de dédouanement au nom de ses clients. LEMATRANS CAMEROUN SARL détient cet agrément officiel depuis 2013, garantissant la légalité totale de chaque opération d'import-export.</div>
       </div>
-
       <div class="faq-item rounded-2xl overflow-hidden cursor-pointer transition-all duration-300" onclick="toggleFaq(this)">
         <div class="flex items-center justify-between gap-3 p-5">
           <span class="faq-q syne font-bold flex-1" style="font-size:clamp(.82rem,1.1vw,.92rem);color:#1A0A3C;">Quels types de marchandises transportez-vous ?</span>
           <div class="faq-icon flex items-center justify-center rounded-lg flex-shrink-0" style="width:28px;height:28px;background:rgba(107,62,200,.08);border:1px solid rgba(107,62,200,.18);color:#6B3EC8;font-size:1.1rem;">+</div>
         </div>
-        <div class="faq-body">Nous transportons tous types de marchandises : vrac , matériaux de construction, machines industrielles, véhicules et constructions transportables. Nous gérons également les convois exceptionnels et les charges hors-gabarit.</div>
+        <div class="faq-body">Nous transportons tous types de marchandises : vrac, matériaux de construction, machines industrielles, véhicules et constructions transportables. Nous gérons également les convois exceptionnels et les charges hors-gabarit.</div>
       </div>
-
       <div class="faq-item rounded-2xl overflow-hidden cursor-pointer transition-all duration-300" onclick="toggleFaq(this)">
         <div class="flex items-center justify-between gap-3 p-5">
           <span class="faq-q syne font-bold flex-1" style="font-size:clamp(.82rem,1.1vw,.92rem);color:#1A0A3C;">Quels documents sont nécessaires pour le transit ?</span>
@@ -994,15 +1242,13 @@
         </div>
         <div class="faq-body">Les documents généralement requis : facture commerciale, liste de colisage (packing list), connaissement maritime (BL) ou lettre de transport aérien (LTA), certificat d'origine. Selon la nature des marchandises, des licences spécifiques peuvent être nécessaires. Notre équipe vous guide dans la constitution de votre dossier.</div>
       </div>
-
       <div class="faq-item rounded-2xl overflow-hidden cursor-pointer transition-all duration-300" onclick="toggleFaq(this)">
         <div class="flex items-center justify-between gap-3 p-5">
           <span class="faq-q syne font-bold flex-1" style="font-size:clamp(.82rem,1.1vw,.92rem);color:#1A0A3C;">Intervenez-vous dans toutes les régions du Cameroun ?</span>
           <div class="faq-icon flex items-center justify-center rounded-lg flex-shrink-0" style="width:28px;height:28px;background:rgba(107,62,200,.08);border:1px solid rgba(107,62,200,.18);color:#6B3EC8;font-size:1.1rem;">+</div>
         </div>
-        <div class="faq-body">Notre siège est à Douala. Nous couvrons l'ensemble du territoire camerounais — Yaoundé, Bafoussam, Garoua, Maroua, Bertoua et toutes les régions — grâce à notre réseau de partenaires logistiques locaux. </div>
+        <div class="faq-body">Notre siège est à Douala. Nous couvrons l'ensemble du territoire camerounais — Yaoundé, Bafoussam, Garoua, Maroua, Bertoua et toutes les régions — grâce à notre réseau de partenaires logistiques locaux.</div>
       </div>
-
       <div class="faq-item rounded-2xl overflow-hidden cursor-pointer transition-all duration-300" onclick="toggleFaq(this)">
         <div class="flex items-center justify-between gap-3 p-5">
           <span class="faq-q syne font-bold flex-1" style="font-size:clamp(.82rem,1.1vw,.92rem);color:#1A0A3C;">Quels modes de paiement acceptez-vous ?</span>
@@ -1010,7 +1256,6 @@
         </div>
         <div class="faq-body">Nous acceptons les virements bancaires, et les règlements en espèces à nos bureaux de Douala. Toutes nos factures sont détaillées et transparentes.</div>
       </div>
-
       <div class="faq-item rounded-2xl overflow-hidden cursor-pointer transition-all duration-300" onclick="toggleFaq(this)">
         <div class="flex items-center justify-between gap-3 p-5">
           <span class="faq-q syne font-bold flex-1" style="font-size:clamp(.82rem,1.1vw,.92rem);color:#1A0A3C;">LEMATRANS gère-t-il les expéditions vers l'étranger ?</span>
@@ -1018,7 +1263,6 @@
         </div>
         <div class="faq-body">Oui. LEMATRANS est active dans les échanges internationaux avec des expéditions enregistrées notamment vers le Vietnam et d'autres marchés asiatiques. Nous gérons toute la chaîne documentaire et logistique pour vos opérations d'import-export, du Cameroun vers le monde entier.</div>
       </div>
-
     </div>
   </div>
 </section>
@@ -1038,86 +1282,49 @@
       <h2 class="playfair section-title" style="font-weight:800;line-height:1.08;margin-bottom:.75rem;color:#1A0A3C;">Contactez <span class="shimmer-glow">LEMATRANS</span></h2>
       <p class="section-desc" style="color:#6B5B8D;max-width:500px;margin:0 auto;line-height:1.8;">Notre équipe est prête à prendre en charge vos opérations logistiques avec professionnalisme.</p>
     </div>
-
     <div class="contact-grid grid gap-8 items-start reveal" style="grid-template-columns:1fr 1fr;">
-
-      <!-- Coordonnées -->
       <div>
         <h3 class="playfair font-extrabold mb-2.5" style="font-size:clamp(1.5rem,3vw,2rem);color:#1A0A3C;">Nos Coordonnées</h3>
         <p class="mb-6" style="color:#6B5B8D;font-size:.88rem;line-height:1.8;">Disponibles lundi–samedi de 8h à 18h. Urgences sur WhatsApp 7j/7.</p>
         <div class="flex flex-col gap-3">
           <div class="contact-row light-card rounded-2xl flex items-start gap-3.5" style="padding:.9rem 1.1rem;">
             <div class="contact-icon flex items-center justify-center rounded-[10px] flex-shrink-0" style="width:42px;height:42px;background:rgba(107,62,200,.08);border:1px solid rgba(107,62,200,.15);font-size:1.15rem;">📍</div>
-            <div>
-              <div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.1em;color:#9B6EF5;margin-bottom:3px;">Siège Social</div>
-              <div class="syne font-bold" style="font-size:.9rem;color:#1A0A3C;">B.P. 1780, Douala, Cameroun 🇨🇲</div>
-            </div>
+            <div><div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.1em;color:#9B6EF5;margin-bottom:3px;">Siège Social</div><div class="syne font-bold" style="font-size:.9rem;color:#1A0A3C;">B.P. 1780, Douala, Cameroun 🇨🇲</div></div>
           </div>
           <div class="contact-row light-card rounded-2xl flex items-start gap-3.5" style="padding:.9rem 1.1rem;">
             <div class="contact-icon flex items-center justify-center rounded-[10px] flex-shrink-0" style="width:42px;height:42px;background:rgba(37,211,102,.08);border:1px solid rgba(37,211,102,.2);font-size:1.15rem;">📱</div>
-            <div>
-              <div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.1em;color:#9B6EF5;margin-bottom:3px;">WhatsApp &amp; Téléphone</div>
-              <a href="tel:+237696797882" class="syne font-bold no-underline" style="font-size:.9rem;color:#1A0A3C;">+237 6 96 79 78 82</a>
-            </div>
+            <div><div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.1em;color:#9B6EF5;margin-bottom:3px;">WhatsApp &amp; Téléphone</div><a href="tel:+237696797882" class="syne font-bold no-underline" style="font-size:.9rem;color:#1A0A3C;">+237 6 96 79 78 82</a></div>
           </div>
           <div class="contact-row light-card rounded-2xl flex items-start gap-3.5" style="padding:.9rem 1.1rem;">
             <div class="contact-icon flex items-center justify-center rounded-[10px] flex-shrink-0" style="width:42px;height:42px;background:rgba(107,62,200,.08);border:1px solid rgba(107,62,200,.15);font-size:1.15rem;">👤</div>
-            <div>
-              <div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.1em;color:#9B6EF5;margin-bottom:3px;">Dirigeant</div>
-              <div class="syne font-bold" style="font-size:.9rem;color:#1A0A3C;">Emmanuel LEKAM — PDG</div>
-            </div>
+            <div><div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.1em;color:#9B6EF5;margin-bottom:3px;">Dirigeant</div><div class="syne font-bold" style="font-size:.9rem;color:#1A0A3C;">Emmanuel LEKAM — PDG</div></div>
           </div>
           <div class="contact-row light-card rounded-2xl flex items-start gap-3.5" style="padding:.9rem 1.1rem;">
             <div class="contact-icon flex items-center justify-center rounded-[10px] flex-shrink-0" style="width:42px;height:42px;background:rgba(107,62,200,.08);border:1px solid rgba(107,62,200,.15);font-size:1.15rem;">📧</div>
-            <div style="min-width:0;">
-              <div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.1em;color:#9B6EF5;margin-bottom:3px;">Emails</div>
-              <div class="syne font-bold" style="font-size:.84rem;color:#1A0A3C;word-break:break-all;">secretariat.lematransarl@gmail.com</div>
-              <div style="font-size:.74rem;color:#9B85C0;margin-top:2px;word-break:break-all;">lematranscamerounsarl@gmail.com</div>
-            </div>
+            <div style="min-width:0;"><div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.1em;color:#9B6EF5;margin-bottom:3px;">Emails</div><div class="syne font-bold" style="font-size:.84rem;color:#1A0A3C;word-break:break-all;">secretariat.lematransarl@gmail.com</div><div style="font-size:.74rem;color:#9B85C0;margin-top:2px;word-break:break-all;">lematranscamerounsarl@gmail.com</div></div>
           </div>
           <div class="contact-row light-card rounded-2xl flex items-start gap-3.5" style="padding:.9rem 1.1rem;">
             <div class="contact-icon flex items-center justify-center rounded-[10px] flex-shrink-0" style="width:42px;height:42px;background:rgba(107,62,200,.08);border:1px solid rgba(107,62,200,.15);font-size:1.15rem;">⏰</div>
-            <div>
-              <div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.1em;color:#9B6EF5;margin-bottom:3px;">Horaires</div>
-              <div class="syne font-bold" style="font-size:.9rem;color:#1A0A3C;">Lun – Sam · 8h00 – 18h00</div>
-              <div style="font-size:.74rem;color:#9B85C0;margin-top:2px;">Urgences WhatsApp 7j/7</div>
-            </div>
+            <div><div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.1em;color:#9B6EF5;margin-bottom:3px;">Horaires</div><div class="syne font-bold" style="font-size:.9rem;color:#1A0A3C;">Lun – Sam · 8h00 – 18h00</div><div style="font-size:.74rem;color:#9B85C0;margin-top:2px;">Urgences WhatsApp 7j/7</div></div>
           </div>
         </div>
       </div>
-
-      <!-- WA CTA box -->
       <div class="wa-box rounded-[22px]" style="background:linear-gradient(135deg,rgba(37,211,102,.06),rgba(18,140,126,.03));border:1px solid rgba(37,211,102,.18);box-shadow:0 8px 30px rgba(37,211,102,.07);padding:clamp(1.4rem,4vw,2.5rem);">
         <div style="font-size:2.4rem;margin-bottom:.8rem;">💬</div>
         <h4 class="playfair font-extrabold mb-2" style="font-size:clamp(1.3rem,2.5vw,1.55rem);color:#1A0A3C;">Contactez-Nous sur WhatsApp</h4>
-        <p class="mb-6" style="font-size:.83rem;color:#6B5B8D;line-height:1.7;">
-          Décrivez votre besoin logistique et notre équipe vous répond rapidement pour vous proposer la meilleure solution.
-        </p>
+        <p class="mb-6" style="font-size:.83rem;color:#6B5B8D;line-height:1.7;">Décrivez votre besoin logistique et notre équipe vous répond rapidement pour vous proposer la meilleure solution.</p>
         <a href="https://wa.me/237696797882?text=Bonjour%20LEMATRANS%20%E2%80%94%20je%20souhaite%20un%20renseignement%20sur%20vos%20services%20de%20transport%20et%20logistique." target="_blank" rel="noreferrer"
            class="btn-wa w-full justify-center mb-4" style="font-size:.96rem;padding:14px;border-radius:14px;text-decoration:none;">
           <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.534 5.853L0 24l6.335-1.521A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.945 9.945 0 01-5.33-1.44l-.38-.225-3.962.951.972-3.867-.248-.389A9.945 9.945 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
           +237 6 96 79 78 82
         </a>
         <div class="wa-box-grid grid gap-2" style="grid-template-columns:repeat(2,1fr);">
-          <div class="text-center rounded-[10px] p-3" style="background:rgba(107,62,200,.05);border:1px solid rgba(107,62,200,.1);">
-            <div style="font-size:1.2rem;margin-bottom:3px;">⚡</div>
-            <div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.06em;color:#9B85C0;">Réponse rapide</div>
-          </div>
-          <div class="text-center rounded-[10px] p-3" style="background:rgba(107,62,200,.05);border:1px solid rgba(107,62,200,.1);">
-            <div style="font-size:1.2rem;margin-bottom:3px;">🔐</div>
-            <div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.06em;color:#9B85C0;">Confidentiel</div>
-          </div>
-          <div class="text-center rounded-[10px] p-3" style="background:rgba(107,62,200,.05);border:1px solid rgba(107,62,200,.1);">
-            <div style="font-size:1.2rem;margin-bottom:3px;">📋</div>
-            <div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.06em;color:#9B85C0;">Agréé douane</div>
-          </div>
-          <div class="text-center rounded-[10px] p-3" style="background:rgba(107,62,200,.05);border:1px solid rgba(107,62,200,.1);">
-            <div style="font-size:1.2rem;margin-bottom:3px;">📅</div>
-            <div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.06em;color:#9B85C0;">Depuis 2013</div>
-          </div>
+          <div class="text-center rounded-[10px] p-3" style="background:rgba(107,62,200,.05);border:1px solid rgba(107,62,200,.1);"><div style="font-size:1.2rem;margin-bottom:3px;">⚡</div><div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.06em;color:#9B85C0;">Réponse rapide</div></div>
+          <div class="text-center rounded-[10px] p-3" style="background:rgba(107,62,200,.05);border:1px solid rgba(107,62,200,.1);"><div style="font-size:1.2rem;margin-bottom:3px;">🔐</div><div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.06em;color:#9B85C0;">Confidentiel</div></div>
+          <div class="text-center rounded-[10px] p-3" style="background:rgba(107,62,200,.05);border:1px solid rgba(107,62,200,.1);"><div style="font-size:1.2rem;margin-bottom:3px;">📋</div><div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.06em;color:#9B85C0;">Agréé douane</div></div>
+          <div class="text-center rounded-[10px] p-3" style="background:rgba(107,62,200,.05);border:1px solid rgba(107,62,200,.1);"><div style="font-size:1.2rem;margin-bottom:3px;">📅</div><div class="syne font-bold uppercase" style="font-size:.62rem;letter-spacing:.06em;color:#9B85C0;">Depuis 2013</div></div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -1129,7 +1336,6 @@
 <footer style="background:#F0EBF8;border-top:1px solid rgba(107,62,200,.12);">
   <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8" style="padding-top:clamp(2.5rem,5vw,3.5rem);padding-bottom:1.5rem;">
     <div class="footer-grid grid gap-7 mb-8" style="grid-template-columns:repeat(4,1fr);">
-
       <div class="footer-brand" style="grid-column:span 1;">
         <a href="#hero" class="flex items-center gap-2 no-underline mb-4">
           <div class="flex items-center justify-center rounded-[10px] flex-shrink-0" style="width:32px;height:32px;background:linear-gradient(135deg,#9B6EF5,#4A1A9E);box-shadow:0 4px 18px rgba(107,62,200,.3);">
@@ -1140,29 +1346,24 @@
             <div class="syne" style="font-size:.5rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#9B6EF5;margin-top:1px;">Cameroun SARL</div>
           </div>
         </a>
-        <p class="mb-4" style="font-size:.79rem;color:#6B5B8D;line-height:1.7;max-width:230px;">
-          Commissionnaire Agréé en Douane. Transport Routier, Logistique Spécialisée et Import-Export au Cameroun depuis 2013.
-        </p>
-        <a href="https://wa.me/237696797882?text=Bonjour%20LEMATRANS%2C%20je%20souhaite%20un%20renseignement." target="_blank" rel="noreferrer"
-           class="btn-wa" style="font-size:.74rem;padding:8px 14px;">
+        <p class="mb-4" style="font-size:.79rem;color:#6B5B8D;line-height:1.7;max-width:230px;">Commissionnaire Agréé en Douane. Transport Routier, Logistique Spécialisée et Import-Export au Cameroun depuis 2013.</p>
+        <a href="https://wa.me/237696797882?text=Bonjour%20LEMATRANS%2C%20je%20souhaite%20un%20renseignement." target="_blank" rel="noreferrer" class="btn-wa" style="font-size:.74rem;padding:8px 14px;">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.534 5.853L0 24l6.335-1.521A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.945 9.945 0 01-5.33-1.44l-.38-.225-3.962.951.972-3.867-.248-.389A9.945 9.945 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
           WhatsApp
         </a>
       </div>
-
       <div>
         <div class="syne font-extrabold uppercase mb-3.5" style="color:#6B3EC8;font-size:.72rem;letter-spacing:.14em;">Navigation</div>
         <ul class="list-none flex flex-col gap-1.5">
-          <li><a href="#hero"      style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">Accueil</a></li>
-          <li><a href="#services"  style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">Services</a></li>
-          <li><a href="#bois"      style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">Négoce Bois</a></li>
-          <li><a href="#pourquoi"  style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">Pourquoi nous</a></li>
-          <li><a href="#process"   style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">Processus</a></li>
-          <li><a href="#faq"       style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">FAQ</a></li>
-          <li><a href="#contact"   style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">Contact</a></li>
+          <li><a href="#hero"     style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">Accueil</a></li>
+          <li><a href="#services" style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">Services</a></li>
+          <li><a href="#bois"     style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">Négoce Bois</a></li>
+          <li><a href="#pourquoi" style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">Pourquoi nous</a></li>
+          <li><a href="#process"  style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">Processus</a></li>
+          <li><a href="#faq"      style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">FAQ</a></li>
+          <li><a href="#contact"  style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">Contact</a></li>
         </ul>
       </div>
-
       <div>
         <div class="syne font-extrabold uppercase mb-3.5" style="color:#6B3EC8;font-size:.72rem;letter-spacing:.14em;">Services</div>
         <ul class="list-none flex flex-col gap-1.5">
@@ -1174,7 +1375,6 @@
           <li><a href="#services" style="font-size:.79rem;color:#6B5B8D;text-decoration:none;transition:color .2s;display:block;" onmouseover="this.style.color='#6B3EC8'" onmouseout="this.style.color='#6B5B8D'">✈️ Fret Aérien</a></li>
         </ul>
       </div>
-
       <div>
         <div class="syne font-extrabold uppercase mb-3.5" style="color:#6B3EC8;font-size:.72rem;letter-spacing:.14em;">Contact</div>
         <ul class="list-none flex flex-col gap-1.5">
@@ -1186,9 +1386,7 @@
           <li><span style="font-size:.79rem;color:#6B5B8D;">👤 Emmanuel LEKAM — PDG</span></li>
         </ul>
       </div>
-
     </div>
-
     <div class="flex flex-wrap justify-between items-center gap-2 pt-4" style="border-top:1px solid rgba(107,62,200,.1);">
       <div style="font-size:.72rem;color:#9B85C0;">© 2025 <span style="color:#6B3EC8;font-weight:700;">LEMATRANS CAMEROUN SARL</span> · Tous droits réservés</div>
       <div style="font-size:.72rem;color:#9B85C0;">Commissionnaire Agréé en Douane 📋 · Douala 🇨🇲 · Depuis 2013</div>
@@ -1227,71 +1425,140 @@ let menuOpen = false;
 function toggleMenu() {
   menuOpen = !menuOpen;
   const menu = document.getElementById('mobile-menu');
-  const h1 = document.getElementById('h1'),
-        h2 = document.getElementById('h2'),
-        h3 = document.getElementById('h3');
+  const h1 = document.getElementById('h1'), h2 = document.getElementById('h2'), h3 = document.getElementById('h3');
   if (menuOpen) {
     menu.classList.remove('hidden');
     h1.style.transform = 'rotate(45deg) translate(5px,5px)'; h1.style.background = '#6B3EC8';
     h2.style.background = 'transparent';
     h3.style.transform = 'rotate(-45deg) translate(5px,-5px)'; h3.style.background = '#6B3EC8';
-  } else {
-    closeMenu();
-  }
+  } else { closeMenu(); }
 }
 function closeMenu() {
   menuOpen = false;
   document.getElementById('mobile-menu').classList.add('hidden');
   ['h1','h2','h3'].forEach(id => {
     const el = document.getElementById(id);
-    el.style.transform = '';
-    el.style.background = '#6B3EC8';
+    el.style.transform = ''; el.style.background = '#6B3EC8';
   });
 }
 document.getElementById('hamburger').addEventListener('click', toggleMenu);
-window.addEventListener('resize', () => {
-  if (window.innerWidth >= 1024 && menuOpen) closeMenu();
-}, { passive: true });
+window.addEventListener('resize', () => { if (window.innerWidth >= 1024 && menuOpen) closeMenu(); }, { passive: true });
 
 /* ── Scroll reveal ── */
 const revealObs = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('visible');
-      revealObs.unobserve(e.target);
-    }
-  });
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
 }, { threshold: 0.08 });
 document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => revealObs.observe(el));
 
 /* ── FAQ ── */
 function toggleFaq(el) {
   const isOpen = el.classList.contains('open');
-  document.querySelectorAll('.faq-item').forEach(f => {
-    f.classList.remove('open');
-    f.querySelector('.faq-body').classList.remove('open');
-  });
-  if (!isOpen) {
-    el.classList.add('open');
-    el.querySelector('.faq-body').classList.add('open');
-  }
+  document.querySelectorAll('.faq-item').forEach(f => { f.classList.remove('open'); f.querySelector('.faq-body').classList.remove('open'); });
+  if (!isOpen) { el.classList.add('open'); el.querySelector('.faq-body').classList.add('open'); }
 }
 
-/* ── Smooth scroll for anchor links ── */
+/* ── Smooth scroll ── */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     const href = this.getAttribute('href');
     if (href !== '#' && href.startsWith('#')) {
       e.preventDefault();
       const target = document.querySelector(href);
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        // Close mobile menu if open
-        if (menuOpen) closeMenu();
-      }
+      if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); if (menuOpen) closeMenu(); }
     }
   });
 });
+
+
+/* ════════════════════════════════════════
+   SYSTÈME DE CARROUSELS — CR
+   ════════════════════════════════════════
+   
+   Pour remplacer une image, modifiez l'attribut src= du <img>
+   correspondant dans le HTML ci-dessus.
+   
+   IDs des carrousels :
+   · 'transport'  → Service Transport Routier
+   · 'logistique' → Service Logistique Spécialisée
+   · 'import'     → Service Import-Export
+   · 'bois'       → Partenariat Négoce Bois
+   ════════════════════════════════════════ */
+const CR = (() => {
+  const S = {};   // état de chaque carrousel
+
+  function init(id, delay = 0) {
+    const track = document.getElementById('cr-track-' + id);
+    if (!track) return;
+    const total = track.querySelectorAll('.cr-slide').length;
+    S[id] = { cur: 0, total, timer: null };
+
+    // Touch / swipe mobile
+    let sx = 0, sy = 0;
+    track.addEventListener('touchstart', e => {
+      sx = e.touches[0].clientX;
+      sy = e.touches[0].clientY;
+    }, { passive: true });
+    track.addEventListener('touchend', e => {
+      const dx = sx - e.changedTouches[0].clientX;
+      const dy = sy - e.changedTouches[0].clientY;
+      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 38) {
+        move(id, dx > 0 ? 1 : -1);
+      }
+    }, { passive: true });
+
+    // Démarrage décalé pour ne pas tous démarrer en même temps
+    setTimeout(() => startAuto(id), delay);
+    render(id);
+  }
+
+  function render(id) {
+    const s = S[id];
+    const track = document.getElementById('cr-track-' + id);
+    if (track) track.style.transform = 'translateX(-' + (s.cur * 100) + '%)';
+    const dotsEl = document.getElementById('cr-dots-' + id);
+    if (dotsEl) dotsEl.querySelectorAll('.cr-dot').forEach((d, i) => d.classList.toggle('on', i === s.cur));
+    const counter = document.getElementById('cr-counter-' + id);
+    if (counter) counter.textContent = (s.cur + 1) + ' / ' + s.total;
+  }
+
+  function move(id, dir) {
+    if (!S[id]) return;
+    S[id].cur = (S[id].cur + dir + S[id].total) % S[id].total;
+    render(id);
+    resetAuto(id);
+  }
+
+  function go(id, idx) {
+    if (!S[id]) return;
+    S[id].cur = idx;
+    render(id);
+    resetAuto(id);
+  }
+
+  function startAuto(id) {
+    if (!S[id]) return;
+    S[id].timer = setInterval(() => move(id, 1), 4200);
+  }
+
+  function resetAuto(id) {
+    if (!S[id]) return;
+    clearInterval(S[id].timer);
+    startAuto(id);
+  }
+
+  function pause(id)  { if (S[id]) clearInterval(S[id].timer); }
+  function resume(id) { if (S[id]) startAuto(id); }
+
+  // Initialisation de tous les carrousels avec décalages
+  window.addEventListener('DOMContentLoaded', () => {
+    init('transport',   0);
+    init('logistique', 800);
+    init('import',    1600);
+    init('bois',      2400);
+  });
+
+  return { move, go, pause, resume };
+})();
 </script>
 </body>
 </html>
